@@ -42,7 +42,7 @@ export function Hero() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="text-4xl sm:text-6xl lg:text-7xl mb-6 tracking-tight"
           >
-            Vasu Ji
+            Vasu Chechi
           </motion.h1>
 
           <motion.p
