@@ -1,62 +1,20 @@
 import { motion } from 'motion/react';
-import { Briefcase, GraduationCap } from 'lucide-react';
+import { Briefcase } from 'lucide-react';
 
 export function Experience() {
   const timeline = [
     {
       type: 'work',
       icon: Briefcase,
-      title: 'Senior ASP.NET Developer',
-      organization: 'Tech Innovations Inc.',
-      period: '2023 - Present',
+      title: 'Associate Software Developer',
+      organization: 'Vision Technosys, Jalandhar, Punjab',
+      period: 'Nov 4, 2024 – Jan 19, 2026',
       description:
-        'Leading development of enterprise applications using ASP.NET Core, C#, and Azure. Architecting microservices and RESTful APIs. Mentoring a team of 5 developers. Improved system performance by 50% and reduced deployment time by 70%.',
+        'Developing and maintaining web applications using ASP.NET MVC framework. Implementing business logic with C#, following Object-Oriented Programming (OOP) principles for efficient and scalable solutions. Collaborating with team members to troubleshoot and resolve software issues, enhancing application performance.',
       achievements: [
-        'Migrated legacy .NET Framework to .NET 8',
-        'Implemented clean architecture patterns',
-        'Reduced Azure hosting costs by 30%',
-      ],
-    },
-    {
-      type: 'work',
-      icon: Briefcase,
-      title: 'ASP.NET Developer',
-      organization: 'Digital Solutions Ltd.',
-      period: '2021 - 2023',
-      description:
-        'Built and maintained 15+ web applications using ASP.NET Core MVC and Web API. Designed and optimized SQL Server databases. Implemented CI/CD pipelines using Azure DevOps.',
-      achievements: [
-        'Developed 15+ production applications',
-        'Optimized database queries (40% faster)',
-        'Mentored 3 junior developers',
-      ],
-    },
-    {
-      type: 'education',
-      icon: GraduationCap,
-      title: 'B.S. Computer Science',
-      organization: 'University of Technology',
-      period: '2017 - 2021',
-      description:
-        'Graduated with First Class Honors. Specialized in Software Engineering and Database Systems. President of Computer Science Society.',
-      achievements: [
-        'GPA: 3.8/4.0',
-        'Dean\'s List all semesters',
-        'Led .NET development workshops',
-      ],
-    },
-    {
-      type: 'work',
-      icon: Briefcase,
-      title: 'Junior .NET Developer',
-      organization: 'Software Agency',
-      period: '2020 - 2021',
-      description:
-        'Developed web applications using ASP.NET MVC and Web Forms. Worked with SQL Server for database design and stored procedures. Collaborated with senior developers on enterprise projects.',
-      achievements: [
-        'Built 20+ web applications',
-        'Maintained 98% code quality score',
-        'Reduced page load times by 35%',
+        'Developed and maintained ASP.NET MVC applications',
+        'Implemented OOP-based scalable business logic',
+        'Collaborated with team to optimize performance and fix bugs',
       ],
     },
   ];
@@ -106,11 +64,7 @@ export function Experience() {
 
                   <div className="ml-8 md:ml-0 p-6 rounded-lg bg-background/50 border border-border/30 hover:border-border/60 transition-all">
                     <div className="flex items-start gap-4 md:block">
-                      <div
-                        className={`p-3 rounded-lg bg-primary/10 inline-block ${
-                          item.type === 'work' ? 'text-blue-500' : 'text-green-500'
-                        }`}
-                      >
+                      <div className="p-3 rounded-lg bg-primary/10 inline-block text-blue-500">
                         <item.icon size={24} />
                       </div>
                       <div className="flex-1">

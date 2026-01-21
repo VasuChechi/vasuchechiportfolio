@@ -4,7 +4,7 @@ export function Footer() {
   const socialLinks = [
     { icon: Github, href: 'https://github.com', label: 'GitHub' },
     { icon: Linkedin, href: 'https://linkedin.com/in/vasu-chechi-2324752b9', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+
     { icon: Mail, href: 'mailto:Vasuchechi.786@gmail.com', label: 'Email' },
   ];
 
@@ -73,7 +73,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-border/30 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2026 Vasu Chechi. All rights reserved. Built with React, TypeScript & Tailwind CSS
+            © 2026 Vasu Chechi. All rights reserved.
           </p>
         </div>
       </div>

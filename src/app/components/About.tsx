@@ -2,28 +2,28 @@ import { motion } from 'motion/react';
 import { Code2, Users, Zap, Award } from 'lucide-react';
 
 export function About() {
-  const highlights = [
-    {
-      icon: Code2,
-      title: 'Clean Architecture',
-      description: 'Building maintainable, scalable systems with SOLID principles and design patterns',
-    },
-    {
-      icon: Zap,
-      title: 'Performance Optimization',
-      description: 'Delivering fast, efficient applications with 90+ Lighthouse scores',
-    },
-    {
-      icon: Users,
-      title: 'Team Collaboration',
-      description: 'Leading cross-functional teams and mentoring junior developers',
-    },
-    {
-      icon: Award,
-      title: 'Best Practices',
-      description: 'Following industry standards with comprehensive testing and CI/CD',
-    },
-  ];
+ const highlights = [
+  {
+    icon: Code2,
+    title: 'ASP.NET MVC Development',
+    description: 'Building structured, maintainable web applications using ASP.NET MVC, C#, and the .NET Framework',
+  },
+  {
+    icon: Zap,
+    title: 'Database & Backend Logic',
+    description: 'Designing and managing efficient data-driven solutions using MS SQL Server, RDBMS concepts, and Entity Framework',
+  },
+  {
+    icon: Users,
+    title: 'Front-End Integration',
+    description: 'Creating user-friendly interfaces with HTML, JavaScript, and React, integrated seamlessly with backend logic',
+  },
+  {
+    icon: Award,
+    title: 'Clean Code & Problem Solving',
+    description: 'Applying object-oriented programming principles and strong problem-solving skills to deliver reliable solutions',
+  },
+];
 
   return (
     <section id="about" className="py-24 px-4 sm:px-6 lg:px-8">
@@ -50,31 +50,41 @@ export function About() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h3 className="text-2xl mb-6">Building Enterprise Solutions</h3>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                With over 5 years of professional experience in ASP.NET development,
-                I specialize in architecting and developing enterprise-grade web
-                applications and APIs that drive business value and deliver
-                exceptional performance.
-              </p>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                My expertise spans the full Microsoft technology stack, from
-                ASP.NET Core Web APIs and MVC applications to SQL Server database
-                design and Azure cloud deployment. I'm passionate about writing
-                clean, maintainable C# code following SOLID principles.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Currently focused on .NET 8, microservices architecture, and cloud-native
-                applications, helping businesses modernize their infrastructure and
-                build scalable solutions.
-              </p>
-            </motion.div>
+           <motion.div
+  initial={{ opacity: 0, x: -20 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+>
+  <h3 className="text-2xl mb-6">Building Scalable Web Applications</h3>
+
+  <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+    With hands-on professional experience in ASP.NET development, I focus on
+    building reliable, maintainable, and performance-oriented web applications
+    that solve real business problems.
+  </p>
+
+  <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+    My core expertise includes developing ASP.NET MVC applications using C#,
+    designing efficient and normalized database structures with MS SQL Server,
+    and implementing backend logic using Entity Framework and object-oriented
+    programming principles.
+  </p>
+
+  <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+    I also work with front-end technologies such as HTML, JavaScript, and React
+    to create user-friendly interfaces, while focusing on clean code, proper
+    validations, and smooth backend–frontend integration.
+  </p>
+
+  <p className="text-lg text-muted-foreground leading-relaxed">
+    I enjoy working in collaborative team environments, communicating clearly
+    with team members and stakeholders, and continuously learning new
+    technologies to improve my skills and deliver better software solutions.
+  </p>
+</motion.div>
+
+
 
             <div className="grid gap-6">
               {highlights.map((item, index) => (

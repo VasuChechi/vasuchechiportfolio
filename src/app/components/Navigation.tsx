@@ -69,7 +69,7 @@ export function Navigation() {
             className="text-xl tracking-tight"
             onClick={() => handleNavClick('#hero')}
           >
-            {'<'}Dev{' />'}
+           
           </motion.button>
 
           {/* Desktop Navigation */}

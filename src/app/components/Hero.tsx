@@ -51,8 +51,7 @@ export function Hero() {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed"
           >
-            ASP.NET Developer | Building robust, scalable enterprise applications with .NET Core, C#,
-            and Microsoft Azure cloud services
+           ASP.NET Developer with hands-on experience in designing and developing maintainable, high-performance web applications using ASP.NET MVC, C#, React, and MS SQL Server as the primary database.
           </motion.p>
 
           <motion.div
