@@ -33,7 +33,7 @@ export function Projects() {
         'Employee application, client, and supplier onboarding forms',
         'Downloadable operational reports in PDF and Excel formats',
       ],
-      tech: ['React.js', 'ASP.NET', 'SQL Server', 'WebSockets'],
+      tech: ['React.js', 'ASP.NET', 'SQL Server', 'REST APIs'],
       github: 'https://github.com',
       demo: 'https://demo.com',
       showGithub: false,
