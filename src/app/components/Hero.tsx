@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Github, Linkedin, Mail, ChevronDown, Download } from 'lucide-react';
-import VasuChechi_Resume from '../../assets/VasuChechi_Resume.pdf';
+import VasuChechi_Resume from '../../assets/Vasu Resume1.pdf';
 
 export function Hero() {
   const socialLinks = [
