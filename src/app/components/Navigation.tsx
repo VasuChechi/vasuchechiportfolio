@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Download, Moon, Sun } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useTheme } from '@/app/context/ThemeContext';
-import VasuChechi_Resume from '../../assets/VasuChechi_Resume.pdf';
+import VasuChechi_Resume from '../../assets/Vasu Resume1.pdf';
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
