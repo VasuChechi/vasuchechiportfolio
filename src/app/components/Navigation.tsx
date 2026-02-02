@@ -42,11 +42,13 @@ export function Navigation() {
   ];
 
   const handleNavClick = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false);
-    }
+    const id = href.startsWith('#') ? href.slice(1) : href;
+    const element = document.getElementById(id);
+    if (!element) return;
+    setIsMobileMenuOpen(false);
+    requestAnimationFrame(() => {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
   };
 
   return (
@@ -75,17 +77,21 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <button
+              <a
                 key={item.href}
-                onClick={() => handleNavClick(item.href)}
+                href={item.href}
+                onClick={(event) => {
+                  event.preventDefault();
+                  handleNavClick(item.href);
+                }}
                 className={`text-sm transition-colors ${
-                  activeSection === item.href
+                  activeSection === item.href.slice(1)
                     ? 'text-foreground'
                     : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
                 {item.label}
-              </button>
+              </a>
             ))}
             <a
               href={VasuChechi_Resume}
@@ -134,13 +140,17 @@ export function Navigation() {
               {navItems.map((item, index) => {
                 const isActive = activeSection === item.href.substring(1);
                 return (
-                  <motion.button
+                  <motion.a
                     key={item.href}
+                    href={item.href}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -20 }}
                     transition={{ delay: index * 0.1 }}
-                    onClick={() => handleNavClick(item.href)}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      handleNavClick(item.href);
+                    }}
                     className={`block w-full text-left px-4 py-3 rounded-lg transition-colors ${
                       isActive
                         ? 'bg-muted/50 text-foreground'
@@ -148,7 +158,7 @@ export function Navigation() {
                     }`}
                   >
                     {item.label}
-                  </motion.button>
+                  </motion.a>
                 );
               })}
               <motion.a
