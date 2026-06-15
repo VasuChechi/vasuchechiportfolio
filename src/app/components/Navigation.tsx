@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Download, Moon, Sun } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useTheme } from '@/app/context/ThemeContext';
-import VasuChechi_Resume from '../../assets/Vasu Resume1.pdf';
+import VasuChechi_Resume from '../../assets/vasumResume.pdf';
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -95,7 +95,7 @@ export function Navigation() {
             ))}
             <a
               href={VasuChechi_Resume}
-              download="VasuChechi_Resume.pdf"
+              download="vasumResume.pdf"
               className="px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:opacity-90 transition-all flex items-center gap-2 text-sm"
             >
               <Download size={16} />
@@ -167,7 +167,7 @@ export function Navigation() {
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ delay: navItems.length * 0.1 }}
                 href={VasuChechi_Resume}
-                download="VasuChechi_Resume.pdf"
+                download="vasumResume.pdf"
                 className="px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:opacity-90 transition-all flex items-center gap-2 text-lg mt-4"
               >
                 <Download size={20} />

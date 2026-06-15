@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Github, Linkedin, Mail, ChevronDown, Download } from 'lucide-react';
-import VasuChechi_Resume from '../../assets/Vasu Resume1.pdf';
+import VasuChechi_Resume from '../../assets/vasumResume.pdf';
 
 export function Hero() {
   const socialLinks = [
@@ -78,7 +78,7 @@ export function Hero() {
             </button>
             <a
               href={VasuChechi_Resume}
-              download="VasuChechi_Resume.pdf"
+              download="vasumResume.pdf"
               className="px-8 py-4 rounded-lg border border-border hover:bg-muted/50 transition-all flex items-center justify-center gap-2"
             >
               <Download size={20} />

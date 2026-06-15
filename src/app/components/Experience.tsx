@@ -8,7 +8,7 @@ export function Experience() {
       icon: Briefcase,
       title: 'Associate Software Developer',
       organization: 'Vision Technosys, Jalandhar, Punjab',
-      period: 'Nov 4, 2024 – Jan 19, 2026',
+      period: 'Nov 4, 2024 – Present',
       description:
         'Developing and maintaining web applications using ASP.NET MVC framework. Implementing business logic with C#, following Object-Oriented Programming (OOP) principles for efficient and scalable solutions. Collaborating with team members to troubleshoot and resolve software issues, enhancing application performance.',
       achievements: [
